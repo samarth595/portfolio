@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #ffffff;
+      background: #000000;
+      background-image: url(pexels-steve-29708304.jpg);
+    }
+    header {
+      background: linear-gradient(to right, #1e88e5, #42a5f5);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      border-radius: 0 0 15px 15px;
+      background-image: url(photo-1453928582365-b6ad33cbcf64.avif);
+      background-size: cover;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+      animation: fadeInDown 1.5s;
+      color:#1565c0;
+    }
+    .hover-image {
+      transition: transform 0.3s ease; 
+    }
+
+    
+    .hover-image:hover {
+      transform: scale(1.1);
+    }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: #1565c0;
+      border-radius: 5px;
+      color: #14c7ca;
+    }
+    section {
+      padding: 30px;
+      max-width: 900px;
+      margin: 30px auto;
+      background: #1e1e1e;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+      animation: slideUp 1s;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #64b5f6;
+      text-align: center;
+    }
+    .about-me img {
+      width: 150px;
+      height: 150px;
+      display: block;
+      border-radius: 35%;
+      margin: 10px auto 20px;
+      border: 4px solid #64b5f6;
+      animation: fadeIn 2s;
+     
+    }
+    .about-me{
+      background-color: linear-gradient(right,#1565c0,#64b5f6,#1565c0);
+    }
+    .skills ul, .goals ul {
+      list-style-type: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .skills ul li, .goals ul li {
+      background: #212121;
+      margin: 5px 0;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .skills ul li:hover, .goals ul li:hover {
+      background-color: #424242;
+      transform: scale(1.05);
+    }
+    
+    
+    footer {
+      text-align: center;
+      background: linear-gradient(to right, #424242, #212121);
+      color: white;
+      padding: 15px 0;
+      margin-top: 30px;
+      border-radius: 15px 15px 0 0;
+    }
+    footer p {
+      margin: 0;
+      font-size: 1em;
+    }
+
+    
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Samarth Yuvraj Bhatnagar</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#goals">Learning Goals</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="about-me" class="about-me">
+    <h2>About Me</h2>
+    <img src="WhatsApp Image 2024-12-13 at 15.55.13_77f1c125.jpg" alt="My Photo"  class="hover-image">
+    <p>Hello! I'm <strong>Samarth Yuvraj Bhatnagar</strong>, a passionate learner focused on web development, programming, and robotics. I enjoy building interactive websites and applications, mastering programming languages like Python and JavaScript, and exploring the integration of hardware and software in robotics. With a strong commitment to continuous learning, I strive to create innovative solutions and improve my skills in these dynamic fields.</p>
+  </section>
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Git/GitHub</li>
+    </ul>
+  </section>
+  <section id="goals" class="goals">
+    <h2>Learning Goals</h2>
+    <ul>
+      <li><strong>Build a full-stack web application</strong><br><p>Building a full-stack web application involves developing both the frontend (user interface) and backend (server-side logic) components of a system, integrating them with a database to create a complete, functional application. </p></li>
+      <li><strong></strong>Learn React.js for front-end development</strong><br><p>Learning React.js for front-end development involves mastering a powerful JavaScript library used to build dynamic and interactive user interfaces. React's component-based architecture enables developers to create reusable, modular pieces of code, simplifying the development process. </p></li>
+      <li><strong>Learn Python for AI</strong><br><p>Learning Python for AI involves understanding both Python programming and the key AI concepts. Python is a popular language for AI because of its simplicity and a vast ecosystem of libraries like NumPy, Pandas, TensorFlow, PyTorch, and scikit-learn. These libraries help with data manipulation, machine learning, deep learning, and natural language processing. </p></li>
+    </ul>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    Email id:samarth.2428cse2006@kiet.edu <br>
+    Phone no.:9870835701
+  </section>
+  <footer>
+    <p>&copy; Samarth Yuvraj Bhatnagar 1st Year </p>
+  </footer>
+</body>
+</html
